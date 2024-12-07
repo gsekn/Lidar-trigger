@@ -1,4 +1,4 @@
-// guy eakin 2024-07-21
+// guy eakin 2024-Dec-7
 // adapted from https://www.diyengineers.com/2022/06/02/lidar-how-to-use-with-arduino/
 // display adapted from https://github.com/adafruit/Adafruit_SSD1306/blob/master/examples/ssd1306_128x32_i2c/ssd1306_128x32_i2c.ino
 //
