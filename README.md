@@ -17,5 +17,12 @@ If using a PCB I highly recommend soldering headers into the board rather than d
 
 A basic understanding of electronics and access to a typical hobbyist electronic equipment is necessary. But this is not an especially sophisticated build.   Additional equipment involved in this build included soldering equipment, digital multimeter, dremel tool and drill for modifying the project box, hot glue gun for securing components. nylon or brass standoff spacers for physically supporting components like the OLED display.  Zip ties and electric tape because, again, this is not an especially sophisticated build.  
 
-# disclaimer
+# Things that could be improved
+* The radio control is the only way to currently interface with the device.  On board physical keys were planned, but a bug in the circuit design needs to be corrected
+* Power management has not been tested throughly.  Roght now the best way to make it last longer is get a bigger battery.  This can probably be optimized in the code, by doing small things like turning off lights and displays when no activity is happening.
+* A way of "dialing in" the set points is conceivably useful, and would probably require additional buttons or a potentiometer
+* The laser and Lidar are currently not aligned exceot by duct tape and trial and error. They could be designed in a way that keepys them from drifting.
+* The LIDAR beam is pretty broad (2 degrees) for small objects, but too small to catch movement outside of the 2 degree beam path.  Short of including additional LIDAR devices, it's not immediately clear that anything can be done about that.
+
+# Disclaimer
 This is offered as is. I am not an expert and there may be errors or bugs in the approach described here that could cause any number of problems. If you are replicating it, you are agreeing to be responsible for any negative outcomes.   
