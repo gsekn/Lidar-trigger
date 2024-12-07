@@ -237,6 +237,10 @@ void loop(){
 
         }          
     }
+    else {    // most likely the lidar threw an error
+        tfDist = -1;
+        displayConstructor(tfDist, triggerDistNear, triggerDistFar, false, message = "lidar error", isArmed, isRadio, buttonState_Near, buttonState_Far);
+    }
     delay(10);
 
 
@@ -257,14 +261,13 @@ void displayConstructor(int tfDist, int triggerDistNear, int triggerDistFar, boo
 }
 
 void myserialplotter(int tfDist, int triggerDistNear, int triggerDistFar, bool isTriggered, char *message ,int buttonState_Near,int buttonState_Far){
-    //[this looks misplaced]
-    //when triggered condition is true, provide a indicator in the monitor
+    
+    //when triggered condition is true, provide a indicator in the serial monitor
     //using a variable set to the average of the near and far distances 
-    //int var = 0;
-    //if (isTriggered){
-    //  var = 0.5 * (triggerDistNear + triggerDistFar);
-    //}
-
+    int var = 0;
+    if (isTriggered){
+      var = 0.5 * (triggerDistNear + triggerDistFar);
+    }
 
     Serial.print("Triggered:");Serial.print(var);
     Serial.print(",");    
